@@ -36,7 +36,7 @@ export default function App() {
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-5">
               Never Get Surprised by <br/>
-              <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">
+              <span className="text-white">
                 Subscription Charges
               </span>{' '}
               Again
