@@ -115,7 +115,7 @@ export default function WaitlistForm() {
   };
 
   return (
-    <div id="waitlist" className="w-full bg-white/70 backdrop-blur-xl border border-white/30 rounded-3xl overflow-hidden shadow-lg shadow-slate-200/40 relative max-w-3xl mx-auto">
+    <div id="waitlist" className="w-full bg-white/95 border border-slate-200 rounded-3xl overflow-hidden shadow-xl shadow-black/10 relative max-w-4xl mx-auto">
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-500/10 blur-3xl rounded-full pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-indigo-500/10 blur-3xl rounded-full pointer-events-none" />
 
@@ -263,7 +263,7 @@ export default function WaitlistForm() {
               </div>
 
               {/* Glassmorphic Early Access Ticket */}
-              <div className="bg-white/60 backdrop-blur-xl border border-white/30 rounded-3xl p-6 relative overflow-hidden shadow-lg max-w-md mx-auto">
+              <div className="bg-white border border-slate-200 rounded-3xl p-6 relative overflow-hidden shadow-lg max-w-md mx-auto">
                 
                 {/* Decorative Ticket Side Cuts inside CSS */}
                 <div className="absolute top-1/2 -left-3.5 -translate-y-1/2 w-7 h-7 bg-white border border-slate-200 rounded-full z-10" />
