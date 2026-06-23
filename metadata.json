@@ -1,0 +1,6 @@
+{
+  "name": "SubAudit",
+  "description": "Never get surprised by subscription charges again. Track subscriptions, receive smart renewal reminders, and prevent unexpected charges.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
