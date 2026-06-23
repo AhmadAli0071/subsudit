@@ -19,11 +19,11 @@ export default function App() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80" 
+            src="https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=1600&q=80" 
             alt="" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-white/85 backdrop-blur-sm" />
+          <div className="absolute inset-0 bg-white/90 backdrop-blur-md" />
         </div>
 
         <div className="relative z-10 py-16 sm:py-24 w-full">
