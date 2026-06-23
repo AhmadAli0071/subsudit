@@ -75,8 +75,7 @@ export default function WaitlistForm() {
       subscriptions: selectedSubs,
       forgottenChargeHistory: forgottenChargeHistory as any,
       joinedAt: new Date().toISOString(),
-      queueNumber: nextQueueNumber,
-      coupon: 'FOUNDER50'
+      queueNumber: nextQueueNumber
     };
 
     localStorage.setItem('subaudit_waitlist_signup', JSON.stringify(newSignup));
