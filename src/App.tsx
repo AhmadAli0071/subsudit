@@ -15,12 +15,10 @@ export default function App() {
     <div className="min-h-screen bg-slate-50/65 text-slate-800 font-sans selection:bg-blue-500/10 selection:text-blue-900 overflow-x-hidden">
       
       {/* Hero + Waitlist Section */}
-      <section className="relative overflow-hidden min-h-screen flex items-center">
+      <section className="relative overflow-hidden py-10 sm:py-16">
         {/* Background Image */}
-        <div className="absolute inset-0 z-0 bg-white">
-          <div className="absolute inset-0 bg-[url('/assets/bg.jpg')] bg-cover bg-center opacity-40" />
-          <div className="absolute inset-0 backdrop-blur-sm" />
-        </div>
+        <div className="absolute inset-0 z-0 bg-slate-50">
+          <div className="absolute inset-0 bg-[url('/assets/bg.jpg')] bg-contain bg-center bg-no-repeat opacity-30 scale-90" />
 
         <div className="relative z-10 py-16 sm:py-24 w-full">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
