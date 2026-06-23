@@ -16,6 +16,7 @@ export interface WaitlistData {
   forgottenChargeHistory: 'Yes, multiple times' | 'Yes, once or twice' | 'No';
   joinedAt: string;
   queueNumber: number;
+  coupon?: string;
 }
 
 export interface FAQItem {
