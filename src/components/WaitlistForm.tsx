@@ -185,9 +185,9 @@ export default function WaitlistForm() {
                           type="button"
                           key={opt.name}
                           onClick={() => handleToggleSub(opt.name)}
-                          className={`flex items-center gap-2 px-3 py-2.5 border rounded-xl text-left transition-all text-xs font-bold cursor-pointer ${
+                           className={`flex items-center gap-2 px-3 py-2.5 border rounded-xl text-left transition-all text-xs font-bold cursor-pointer ${
                             isChecked 
-                              ? 'bg-blue-500/20 border-blue-400/50 text-blue-200 shadow-sm' 
+                              ? 'bg-blue-600/40 border-blue-400 text-white shadow-md shadow-blue-500/20' 
                               : 'bg-white/5 border-white/10 text-blue-100/60 hover:text-white hover:border-white/30'
                           }`}
                         >
@@ -217,7 +217,7 @@ export default function WaitlistForm() {
                         onClick={() => setForgottenChargeHistory(option)}
                          className={`px-4 py-3 text-xs font-bold border rounded-xl transition-all cursor-pointer text-center ${
                           forgottenChargeHistory === option
-                            ? 'bg-blue-500/20 border-blue-400/50 text-blue-200'
+                            ? 'bg-blue-600/40 border-blue-400 text-white shadow-md shadow-blue-500/20'
                             : 'bg-white/5 border-white/10 text-blue-100/60 hover:text-white hover:border-white/30'
                         }`}
                       >
