@@ -115,7 +115,7 @@ export default function WaitlistForm() {
   };
 
   return (
-    <div id="waitlist" className="w-full bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-xl shadow-black/10 relative max-w-4xl mx-auto">
+    <div id="waitlist" className="w-full bg-white/80 backdrop-blur-md border border-white/30 rounded-3xl overflow-hidden shadow-xl shadow-black/10 relative max-w-4xl mx-auto">
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-500/10 blur-3xl rounded-full pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-indigo-500/10 blur-3xl rounded-full pointer-events-none" />
 
