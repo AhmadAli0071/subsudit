@@ -21,9 +21,9 @@ export default function App() {
           <img 
             src="/assets/bg.jpg" 
             alt="" 
-            className="w-full h-full object-cover scale-110 blur-sm"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-white/85 backdrop-blur-lg" />
+          <div className="absolute inset-0 bg-white/75 backdrop-blur-sm" />
         </div>
 
         <div className="relative z-10 py-16 sm:py-24 w-full">
