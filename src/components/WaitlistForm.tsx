@@ -81,8 +81,9 @@ export default function WaitlistForm() {
     localStorage.setItem('subaudit_waitlist_signup', JSON.stringify(newSignup));
 
     // Send data to backend server
+    const apiUrl = import.meta.env.VITE_API_URL || '';
     try {
-      fetch('/api/waitlist', {
+      fetch(`${apiUrl}/api/waitlist`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newSignup)
