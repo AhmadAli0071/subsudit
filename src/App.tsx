@@ -14,20 +14,8 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-50/65 text-slate-800 font-sans selection:bg-blue-500/10 selection:text-blue-900 overflow-x-hidden">
       
-      {/* Simple Header */}
-      <header className="bg-white/90 backdrop-blur-md border-b border-slate-200 py-4 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-2.5">
-          <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center shadow-md">
-            <Bell className="w-5 h-5 text-white" />
-          </div>
-          <span className="text-xl font-extrabold text-slate-900 tracking-tight">
-            Sub<span className="text-blue-600">Audit</span>
-          </span>
-        </div>
-      </header>
-
       {/* Hero + Waitlist Section */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden min-h-screen flex items-center">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -38,9 +26,19 @@ export default function App() {
           <div className="absolute inset-0 bg-white/85 backdrop-blur-sm" />
         </div>
 
-        <div className="relative z-10 py-16 sm:py-24">
+        <div className="relative z-10 py-16 sm:py-24 w-full">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
             
+            {/* Centered Logo */}
+            <div className="flex flex-col items-center text-center mb-8">
+              <div className="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-500/20 mb-3">
+                <Bell className="w-7 h-7 text-white" />
+              </div>
+              <span className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                Sub<span className="text-blue-600">Audit</span>
+              </span>
+            </div>
+
             {/* Tagline */}
             <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
               <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-blue-50/90 border border-blue-200 rounded-full mb-5">
