@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ChevronDown, Bell } from 'lucide-react';
+import { ChevronDown, Bell, Sparkles } from 'lucide-react';
 import WaitlistForm from './components/WaitlistForm';
 import { FAQS } from './data';
 
@@ -15,7 +15,7 @@ export default function App() {
     <div className="min-h-screen bg-slate-50/65 text-slate-800 font-sans selection:bg-blue-500/10 selection:text-blue-900 overflow-x-hidden">
       
       {/* Simple Header */}
-      <header className="bg-white border-b border-slate-200 py-4">
+      <header className="bg-white/90 backdrop-blur-md border-b border-slate-200 py-4 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-2.5">
           <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center shadow-md">
             <Bell className="w-5 h-5 text-white" />
@@ -26,21 +26,41 @@ export default function App() {
         </div>
       </header>
 
-      {/* Waitlist Form Section */}
-      <section className="py-12 sm:py-20 relative bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
-            <span className="text-xs font-bold text-blue-600 font-mono tracking-widest uppercase block mb-1">
-              EARLY ACCESS
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
-              Join the Early Access Program
-            </h2>
-            <p className="text-sm text-slate-500 leading-relaxed font-medium">
-              Secure your spot and get 50% lifetime discount.
-            </p>
+      {/* Hero + Waitlist Section */}
+      <section className="relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80" 
+            alt="" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-white/85 backdrop-blur-sm" />
+        </div>
+
+        <div className="relative z-10 py-16 sm:py-24">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+            
+            {/* Tagline */}
+            <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+              <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-blue-50/90 border border-blue-200 rounded-full mb-5">
+                <Sparkles className="w-3.5 h-3.5 text-blue-600" />
+                <span className="text-xs font-bold text-blue-700">Early Bird — 50% Lifetime Discount</span>
+              </div>
+              <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4">
+                Never Get Surprised by <br/>
+                <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                  Subscription Charges
+                </span>{' '}
+                Again
+              </h1>
+              <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto font-medium">
+                Track your subscriptions, get smart renewal reminders, and stop paying for services you forgot about.
+              </p>
+            </div>
+
+            <WaitlistForm />
           </div>
-          <WaitlistForm />
         </div>
       </section>
 
