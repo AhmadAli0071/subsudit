@@ -132,7 +132,7 @@ export default function WaitlistForm() {
             >
               <div className="mb-6">
                 <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
-                  Early Bird — <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">50% Lifetime Discount</span>
+                  Early Bird <span className="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">50% Lifetime Discount</span>
                 </h3>
                 <p className="text-sm text-blue-100/60 leading-relaxed mt-3">
                   Complete the questionnaire below. We are compiling statistics on common unwanted subscription charges to build automated cancellation patterns.

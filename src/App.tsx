@@ -29,11 +29,6 @@ export default function App() {
               </span>
             </div>
 
-            <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-white/10 border border-white/20 rounded-full mb-6">
-              <Sparkles className="w-3.5 h-3.5 text-blue-300" />
-              <span className="text-xs font-bold text-blue-200">Early Bird — 50% Lifetime Discount</span>
-            </div>
-
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-5">
               Never Get Surprised by <br/>
               <span className="text-white">
