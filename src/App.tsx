@@ -9,7 +9,7 @@ export default function App() {
       <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-rose-500/5 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-yellow-500/3 blur-[200px] rounded-full pointer-events-none" />
 
-      <section className="min-h-screen flex items-center p-4 sm:p-6 lg:p-8 relative">
+      <section className="py-12 sm:py-16 lg:py-0 lg:min-h-screen lg:flex lg:items-center p-4 sm:p-6 lg:p-8 relative">
         <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           
           <div className="text-center lg:text-left">
