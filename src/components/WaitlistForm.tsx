@@ -79,6 +79,18 @@ export default function WaitlistForm() {
     };
 
     localStorage.setItem('subaudit_waitlist_signup', JSON.stringify(newSignup));
+
+    // Send data to backend server
+    try {
+      fetch('/api/waitlist', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newSignup)
+      }).catch(() => {});
+    } catch(err) {
+      // ignore
+    }
+
     setUserData(newSignup);
     setSubmitted(true);
 
