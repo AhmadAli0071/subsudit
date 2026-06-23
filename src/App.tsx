@@ -17,13 +17,9 @@ export default function App() {
       {/* Hero + Waitlist Section */}
       <section className="relative overflow-hidden min-h-screen flex items-center">
         {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/assets/bg.jpg" 
-            alt="" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-white/75 backdrop-blur-sm" />
+        <div className="absolute inset-0 z-0 bg-white">
+          <div className="absolute inset-0 bg-[url('/assets/bg.jpg')] bg-cover bg-center opacity-40" />
+          <div className="absolute inset-0 backdrop-blur-sm" />
         </div>
 
         <div className="relative z-10 py-16 sm:py-24 w-full">
